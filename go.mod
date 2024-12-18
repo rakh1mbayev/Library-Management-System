@@ -1,3 +1,3 @@
-module library-management-system
+module Library-Management-System
 
-go 1.22.6
+go 1.23.4
