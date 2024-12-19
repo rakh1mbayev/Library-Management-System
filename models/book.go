@@ -1,5 +1,7 @@
 package models
 
+import "go.mongodb.org/mongo-driver/mongo"
+
 //type Book struct {
 //    ID             int
 //    Title          string
@@ -11,6 +13,8 @@ package models
 //    CopiesAvailable int
 //    TotalCopies    int
 //}
+
+var Client *mongo.Client
 
 type Book struct {
 	ID     int    `json:"id"`
