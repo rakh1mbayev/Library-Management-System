@@ -1,7 +1,11 @@
 package config
 
-import "flag"
+import (
+	"flag"
+	"github.com/sirupsen/logrus"
+)
 
 var (
-	Port = flag.String("port", "8080", "The port to listen on")
+	Port   = flag.String("port", "8080", "The port to listen on")
+	Logger = lorgus.New()
 )

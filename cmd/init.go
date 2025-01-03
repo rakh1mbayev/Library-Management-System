@@ -1,8 +1,9 @@
 package main
 
 import (
-	"Library-Management-System/models"
+	"Library-Management-System/internal/models"
 	"context"
+	"fmt"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 	"log"
@@ -20,4 +21,9 @@ func initMongoDB() {
 		log.Fatal(err)
 	}
 	log.Println("Connected to MongoDB!")
+}
+
+func Init() {
+	fmt.Println("Initializing MongoDB...")
+	initMongoDB()
 }
